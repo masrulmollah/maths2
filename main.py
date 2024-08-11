@@ -52,20 +52,6 @@ if 'results' not in st.session_state:
 
 # Main App
 def main():
-
-    # Custom colorful subheader with background image
-    st.markdown(
-        f"""
-        <h3 style='text-align: center; color: #FFFFFF; 
-        background-image: url("data:image/jpg;base64,{base64_image}");
-        background-size: cover;
-        background-position: center;
-        padding: 20px; 
-        border-radius: 10px;'>Muhammad Math Challenge</h3>
-        """,
-        unsafe_allow_html=True
-    )
-
     # Display cumulative score at the top with custom styles
     st.markdown(
         f"""
@@ -84,6 +70,18 @@ def main():
         unsafe_allow_html=True
     )
 
+    # Custom colorful subheader with background image
+    st.markdown(
+        f"""
+        <h3 style='text-align: center; color: #FFFFFF; 
+        background-image: url("data:image/jpg;base64,{base64_image}");
+        background-size: cover;
+        background-position: center;
+        padding: 20px; 
+        border-radius: 10px;'>Muhammad Math Challenge</h3>
+        """,
+        unsafe_allow_html=True
+    )
 
     # File to save problems
     file_path = "math_problems.csv"
@@ -155,10 +153,12 @@ def main():
                                             score = 10 if correct else -20
                                             if correct:
                                                 st.success("*** Correct answer! ***")
-                                                st.session_state.score += score  # Increase score by 10
                                             else:
                                                 st.error("Incorrect, try again.")
-                                                st.session_state.score += score  # Decrease score by 20
+
+                                            # Update score and mark the problem as answered
+                                            st.session_state.score += score
+                                            st.session_state.answered_problems.append(index)
 
                                             # Store result with score
                                             st.session_state.results.append({
@@ -169,8 +169,9 @@ def main():
                                                 'Score': score
                                             })
 
-                                            st.session_state.answered_problems.append(index)  # Mark problem as answered
-                                            st.experimental_rerun()  # Refresh the page to show updated score
+                                            # Trigger re-render
+                                            st.experimental_rerun()
+
                                         except ValueError:
                                             st.error("Please enter a valid integer.")
                             else:
