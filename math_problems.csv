@@ -42,7 +42,7 @@ Class,Category,Problem,Answer
 3,cube,3 ^ 3,27
 4,cube,4 ^ 3,64
 5,cube,5 ^ 3,125
-
+1,odd man out,2..4..7..8..10,7
 
 
 
