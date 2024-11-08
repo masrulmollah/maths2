@@ -24,11 +24,11 @@ Class,Category,Problem,Answer
 10,multiplication,6 X 10,60
 1,division,100 / 10,10
 2,division,100 / 5,20
-3,division,100 / 4,20
+3,division,100 / 4,25
 4,division,100 / 2,50
 5,division,100 / 1,100
 1,square,1 ^ 2,1
-2,square,2 ^ 2,2
+2,square,2 ^ 2,4
 3,square,3 ^ 2,9
 4,square,4 ^ 2,16
 5,square,5 ^ 2,25
