@@ -52,13 +52,13 @@ Class,Category,Problem,Answer
 8,odd man out,6..18..24..28..36,28
 9,odd man out,7..12..14..21..35,12
 10,odd man out,8..16..24..30..64,30
-1,next number,2..4..6..8..10----,12
-2,next number,3..6..9..12..15----,18
-3,next number,1..4..7..10..13----,16
-4,next number,2..6..10..16..24----,34
-5,next number,1..2..4..7..11----,16
-6,next number,1..3..7..13..21----,31
-7,next number,1..2..5..10..17----,26
+1,next number,2..4..6..8..10____,12
+2,next number,3..6..9..12..15____,18
+3,next number,1..4..7..10..13____,16
+4,next number,2..6..10..16..24____,34
+5,next number,1..2..4..7..11____,16
+6,next number,1..3..7..13..21____,31
+7,next number,1..2..5..10..17____,26
 1,abgebra,a=2 b=3  a+b= ?,5
 2,abgebra,c=5  d=2  c-d= ?,3
 
