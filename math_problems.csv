@@ -60,7 +60,11 @@ Class,Category,Problem,Answer
 6,next number,1..3..7..13..21____,31
 7,next number,1..2..5..10..17____,26
 1,abgebra,a=2 b=3  a+b= ?,5
-2,abgebra,c=5  d=2  c-d= ?,3
+2,abgebra,c=15  d=11  c-d= ?,4
+3,abgebra,a=12 b=30  a+b= ?,42
+4,abgebra,a=5 b=8 c=10  a+b+c= ?,23
+5,abgebra,a=15 b=18 c=10  a+b+c= ?,43
+6,abgebra,x=5  y=11  x*y= ?,55
 
 
 
